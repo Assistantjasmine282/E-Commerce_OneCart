@@ -4,7 +4,7 @@ import upload from '../middleware/multer.js'
 import adminAuth from "../middleware/adminAuth.js"
 
 
-let productRoutes = express.Router()
+const productRoutes = express.Router()
 
 productRoutes.post("/addproduct",upload.fields([
     {name:"image1",maxCount:1},
