@@ -19,6 +19,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
  origin:["http://localhost:5173" ,"https://onecartmya.netlify.app","https://6925ec970bb2220008248822--onecartmya.netlify.app/"],
+  //origin: ["https://onecartmya.netlify.app/"],
  credentials:true
 }))
 
