@@ -51,7 +51,7 @@ export const login = async (req,res) => {
         res.cookie("token",token,{
         httpOnly:true,
         secure:true,   //yha false tha
-        sameSite: "Strict",
+        sameSite: "none", //yha strict tha 
         maxAge: 7 * 24 * 60 * 60 * 1000
     })
     return res.status(201).json(user)
